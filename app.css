@@ -1,0 +1,13 @@
+.link-checker-ng {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+  background-color: #d42d2d;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.7;
+}
