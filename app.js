@@ -23,6 +23,11 @@ class Checker {
     const [a, ...xs] = list
     const href = a.getAttribute("href")
     
+    if(href.startsWith("javascript:")) {
+      this.check(xs)
+      return
+    }
+    
     if(href === "") {
       this.addNgElement(a, new LinkError("href=''"))
       this.check(xs)
